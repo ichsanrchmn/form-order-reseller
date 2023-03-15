@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Order</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray-800">
+    <section class="py-36">
+      <div class="w-full px-4">
+        <div class="max-w-full mx-auto text-center mb-10">
+          <h1 id="title" class="text-white font-semibold text-3xl mb-2">Form Order</h1>
+          <p class="text-slate-400">Mohon isi data sesuai request untuk order</p>
+        </div>
+        <form id="form" class="flex justify-center">
+          <div class="w-full lg:w-[500px]">
+            <div class="w-full px-4 mb-5">
+              <input
+                placeholder="Nama Lengkap"
+                type="text"
+                name="name"
+                id="name"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-sky-400 focus:ring-1 focus:border-sky-400"
+                required
+              />
+            </div>
+            <div class="w-full px-4 mb-5">
+              <input
+                placeholder="Email"
+                name="email"
+                type="email"
+                id="email"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-sky-400 focus:ring-1 focus:border-sky-400"
+                required
+              />
+            </div>
+            <div class="w-full px-4 mb-5">
+              <input
+                placeholder="Nomor Handphone"
+                name="phone"
+                type="number"
+                id="phone"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-sky-400 focus:ring-1 focus:border-sky-400"
+                required
+              />
+            </div>
+            <div class="w-full px-4 mb-5">
+              <textarea
+                placeholder="Alamat Lengkap"
+                name="address"
+                type="text"
+                id="address"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-sky-400 focus:ring-1 focus:border-sky-400 h-32"
+                required
+              ></textarea>
+            </div>
+            <div class="w-full px-4 mb-5">
+              <textarea
+                placeholder="Barang yang dipesan"
+                name="barang"
+                type="text"
+                id="barang"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-sky-400 focus:ring-1 focus:border-sky-400 h-32"
+                required
+              ></textarea>
+            </div>
+            <div class="w-full px-4 mb-5">
+              <input
+                placeholder="Harga (IDR)"
+                name="harga"
+                id="harga"
+                type="text"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-sky-400 focus:ring-1 focus:border-sky-400"
+                readonly
+              />
+            </div>
+            <div class="w-full flex justify-center px-4">
+              <button id="button" class="text-white font-semibold bg-sky-600 py-3 px-8 rounded-lg w-[200px] hover:opacity-80 hover:shadow-lg transition duration-300">Kirim</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript" src="./js/productList.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/exportToPDF.js"></script>
+  <script type="text/javascript" src="./js/sheet.js"></script>
+</html>
